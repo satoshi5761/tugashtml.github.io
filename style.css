@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    margin: 20px;
+      animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: green;
+    color: white;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+h6 {
+    color: turquoise;
+    font-family: 'Corben', Georgia, Times, serif;
+
+}
+.dotted {
+    border-bottom: 50px dotted pink;
+}
+
+#tentang-saya {
+    padding: 20px;
+    border: 20px solid skyblue;
+    border-radius: 1px;
+    background-color: yellow;
+}
+
+#foto {
+    max-width: 50%;
+    border: 20px solid #007bff; 
+    border-radius: 0px;
+}
+
+.answer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.frame {
+
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}

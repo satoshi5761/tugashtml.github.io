@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip - 71231002 - Personal Webpage</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+    <header class="p-3 bg-dark text-white">
+        <h1>
+            Welcome to My Personal Web Page
+        </h1>
+    </header>
+
+    <main class="container my-5">
+        <h2>
+            About Me
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <section id="foto">
+                    <img src="incPhotoMhs.jpeg" alt="Philip Deric Kho" class="img-fluid rounded" width="320px" height="320px" >
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="tentang-saya">
+                    <h2 class="dotted">
+                        Philip Deric Kho
+                    </h2>
+                    <p>
+                        @philipderic
+                    </p>
+                    <h3>
+                        Yogyakarta, Indonesia
+                    </h3>
+                    <h5>
+                        <a href="https://www.ukdw.ac.id/en/" target="_blank">Duta Wacana Christian University</a>                        
+                    </h5>
+                </section>
+            </div>
+        </div>
+
+        <section id="keterampilan">
+            <h2>
+                Skillset
+            </h2>
+            <ul class="list-group">
+                <li class="list-group-item">Python: Basic</li>
+                <li class="list-group-item">HTML: Basic</li>
+                <li class="list-group-item">C: Basic</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- <button id="tombolGantiWarna" class="btn btn-primary">Change Background Color</button> -->
+
+    <div class="frame">
+            <h6 >
+                Lelucon Favoritku
+            </h6>
+            <p>Ikan...ikan apa yang badannya kecil, tapi kepalanya besar?</p>
+            <button onclick="bukajawaban('Ikan teri pakai helm')" class="answer">Jawabannya</button>
+        <!-- <p class="answer", style="display: none;">jawabannya adalah ya</p> -->
+    </div>
+
+        <script>
+            function bukajawaban(jawaban) {
+                var answerElement = event.target;
+
+                answerElement.style.display = "block";
+                answerElement.innerHTML = 'Jawabannya: ' + jawaban;
+            }
+        </script>
+    </div>
+
+    <footer class="p-3 bg-dark text-white mt-5">
+        <p>
+            Thank you for visiting
+        </p>
+        <p>
+            @philipderic
+        </p>    
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['black', 'red', 'blue', 'green'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna');
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom);
+    </script>
+
+</body>
+
+</html>
